@@ -53,7 +53,7 @@ export function defaultContainerTemplate<P>({ uid, frame, prerenderFrame, doc, p
                 opacity: 1;
         }
         `));
-
+        frame.setAttribute('allow', 'camera https://popin.scalenext.io; microphone https://popin.scalenext.io');
         div.appendChild(frame);
         div.appendChild(prerenderFrame);
         div.appendChild(style);
